@@ -8,7 +8,7 @@
         body { font-family: 'Arial', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #ffeef2; margin: 0; overflow: hidden; }
         .container { text-align: center; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 85%; max-width: 400px; z-index: 10; }
         
-        /* Animated Heart instead of a GIF */
+        /* The Beating Heart */
         .heart { font-size: 80px; color: #ff4d6d; animation: beat 1s infinite; margin-bottom: 20px; }
         @keyframes beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
 
@@ -19,7 +19,6 @@
         #yesBtn { background-color: #ff4d6d; color: white; left: 10%; top: 0; }
         #noBtn { background-color: #6c757d; color: white; right: 10%; top: 0; z-index: 100; }
 
-        /* Floating background emojis */
         .emoji-bg { position: absolute; font-size: 24px; opacity: 0.5; animation: float 5s infinite ease-in-out; z-index: 1; }
         @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
     </style>
@@ -31,8 +30,8 @@
 
     <div class="container">
         <div class="heart">❤️</div>
-        <h1 id="question">Gopi, will you be my Valentine?</h1>
-        <div class="buttons" id="btnGroup">
+        <h1>Gopi, will you be my Valentine?</h1>
+        <div class="buttons">
             <button id="yesBtn" onclick="celebrate()">Yes</button>
             <button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No</button>
         </div>
@@ -55,7 +54,6 @@
                 <h1>YAY! ❤️ I love you Gopi!</h1>
                 <p style="color: #d63384; font-size: 18px;">You've made me the happiest person!</p>
             `;
-            // Extra background effect
             document.body.style.backgroundColor = "#ffc1cf";
         }
     </script>
