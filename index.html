@@ -6,17 +6,18 @@
     <title>For Gopi</title>
     <style>
         body { font-family: 'Arial', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #ffeef2; margin: 0; overflow: hidden; }
-        .container { text-align: center; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 80%; max-width: 400px; }
-        h1 { color: #d63384; font-size: 24px; }
-        .buttons { margin-top: 30px; position: relative; height: 150px; width: 100%; }
-        button { padding: 15px 30px; font-size: 18px; border: none; border-radius: 10px; cursor: pointer; transition: 0.3s; position: absolute; }
+        .container { text-align: center; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 80%; max-width: 400px; }
+        h1 { color: #d63384; font-size: 24px; margin-bottom: 20px; }
+        .buttons { margin-top: 20px; position: relative; height: 100px; width: 100%; }
+        button { padding: 12px 25px; font-size: 16px; border: none; border-radius: 10px; cursor: pointer; transition: 0.3s; position: absolute; }
         #yesBtn { background-color: #ff4d6d; color: white; left: 10%; }
         #noBtn { background-color: #6c757d; color: white; right: 10%; }
+        img { border-radius: 10px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eXJ0YnpxZ3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3ImZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/c76IJLufpNwSULPk77/giphy.gif" width="150" alt="Cute Cat">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWp0eXp6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3ImZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/c76IJLufpNwSULPk77/giphy.gif" width="150">
         <h1>Gopi, will you be my Valentine?</h1>
         <div class="buttons">
             <button id="yesBtn" onclick="celebrate()">Yes</button>
@@ -32,7 +33,7 @@
             btn.style.top = y + 'px';
         }
         function celebrate() {
-            document.querySelector('.container').innerHTML = "<h1>YAY! ❤️ I love you Gopi!</h1><img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eXJ0YnpxZ3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3ImZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/K6M6R8J6f8bFp6O8fS/giphy.gif' width='200'>";
+            document.querySelector('.container').innerHTML = "<h1>YAY! ❤️ I love you Gopi!</h1><img src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWp0eXp6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3ImZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/K6M6R8J6f8bFp6O8fS/giphy.gif' width='200'>";
         }
     </script>
 </body>
